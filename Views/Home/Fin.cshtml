@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Configurar Juego";
+}
+<section class="contenedor-fin">
+    <div class="subcontenedor-fin">
+        <div class="encabezado-fin">
+            <img src="\Images\fin.png">
+        </div>
+        <div>
+            <img src="\Images\FINIMG.jpg">
+        </div>
+
+        <a href='@Url.Action("ConfigurarJuego","Home")' class="boton-a">VOLVER A JUGAR</a>
+    </div>
+    <div class="contenedor-puntaje">
+        <p>Nombre de Usuario: @ViewBag.username</p>
+        <p>Puntaje: @ViewBag.puntajeActual</p>
+    </div>
+</section>

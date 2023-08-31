@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Configurar Juego";
+}
+<section class = "contenedor-tabla">
+    <img src="/Images/RANKING.png" alt="">
+    <div class="tabla">
+        <ul>
+            <li>Nombre:</li>
+            <div class="division"></div>
+            @foreach (HighScore item in ViewBag.Ranking)
+            {
+                <div>
+                    <li>@item.Username</li>
+                    <div class="division"></div>
+                </div>
+            }
+        </ul>
+        <ul>
+            <li>Puntaje:</li>
+            <div class="division"></div>
+            @foreach (HighScore item in ViewBag.Ranking)
+            {
+                <div>
+                    <li>@item.Puntaje</li>
+                    <div class="division"></div>
+                </div>
+            }
+        </ul>
+        <ul>
+            <li>Fecha:</li>
+            <div class="division"></div>
+            @foreach (HighScore item in ViewBag.Ranking)
+            {
+                <div>
+                    <li>@item.FechaHora</li>
+                    <div class="division"></div>
+                </div>
+            }
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,60 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<section class="seccion-principal">
+    <div class="contenedor-pregunta">
+        <div class="encabezado-pregunta">
+            <h1>Categoria: @ViewBag.categoriaelegida.Nombre</h1>
+            <img src="@ViewBag.categoriaelegida.Foto" alt="">
+        </div>
+        <div class="pregunta">
+            <p>@ViewBag.NumeroPregunta. &nbsp</p>
+            <p>@ViewBag.PreguntaActual.Enunciado</p>
+            @if (ViewBag.PreguntaActual.Foto != null)
+            {
+                <img src="@ViewBag.PreguntaActual.Foto">
+            }
+            <p class="mensajeRespuesta">@ViewBag.mensajeRespuesta</p>
+        </div>
+        <div class="opciones">
+            @foreach (RESPUESTA item in ViewBag.RespuestasActual)
+            {
+                @if (item.IdRespuesta == ViewBag.IdRespuestaElegida)
+                {
+                    @if (item.Correcta == true)
+                    {
+                        <div class = "correcta">
+                        <p class = "opcion-texto">@item.Contenido</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class = "incorrecta">
+                        <p class = "opcion-texto">@item.Contenido</p>
+                        </div>
+                    }
+                }
+                else if (item.Correcta == true)
+                {
+                    <div class = "correcta">
+                    <p class = "opcion-texto">@item.Contenido</p>
+                    </div>
+                }
+                else
+                {
+                    <div class = "cada-opcionb">
+                    <p class = "opcion-texto">@item.Contenido</p>
+                    </div>
+                }
+            }
+        </div>
+
+        <a href='@Url.Action("Jugar", "Home",new {Username = ViewBag.username})' class="boton-a">Siguiente</a>
+    </div>
+    <div class="contenedor-puntaje">
+        <p>Nombre de Usuario: @ViewBag.username</p>
+        <p>Puntaje: @ViewBag.puntajeActual</p>
+    </div>
+</section>

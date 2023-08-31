@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Configurar Juego";
+}
+
+    <section class="contenedor">
+        <form action='@Url.Action("Comenzar")' method="get" class="formulario-configuracion">
+            <h2>Configura tu partida</h2>
+            <div class = "formulario-nombre">
+            <label for="username" class="form-label">Nombre de usuario</label>
+            <input type="text" class="form-control" name="username" required>
+            </div>
+            <div class="formulario-dificultad">
+                <label for="dificultad" class="form-label">Dificultad</label>
+                <select class="form-select" name="dificultad" required>
+                    <option selected>Selecciona la Dificultad</option>
+                    @foreach (var item in ViewBag.dificultades)
+                    {
+                        <option value="@item.IdDificultad">@item.Nombre</option>
+                    }
+                    <option value="-1">Todas</option>
+                </select>
+            </div>
+            <div class="formulario-categoria">
+                <label for="categoria" class="form-label">Categoria</label>
+                <select class="form-select" name="categoria" required>
+                    <option selected>Selecciona la Categoria</option>
+                    @foreach (var item in ViewBag.categorias)
+                    {
+                        <option value="@item.IdCategoria">@item.Nombre</option>
+                    }
+                    <option value="-1">Todas</option>
+                </select>
+            </div>
+            <button type="submit" class="boton-b">JUGAR</button>
+        </form>
+    </section>

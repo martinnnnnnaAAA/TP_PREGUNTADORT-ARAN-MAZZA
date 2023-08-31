@@ -1,0 +1,67 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<section class="seccion-principal">
+    <div class="contenedor-pregunta">
+        <div class="encabezado-pregunta">
+            <h1>Categoria: @ViewBag.categoriaelegida.Nombre</h1>
+            <img src="@ViewBag.categoriaelegida.Foto" alt="">
+        </div>
+    <div id="timer">10</div>
+        <div class="pregunta">
+            <p>@ViewBag.NumeroPregunta. &nbsp</p>
+            @if (ViewBag.PreguntaActual.Foto != null)
+            {
+                <img src="@ViewBag.PreguntaActual.Foto">
+            }
+            <p>@ViewBag.PreguntaActual.Enunciado</p>
+        </div>
+        <div class="opciones">
+            <form action="@Url.Action("VerificarRespuesta")" method="post" id="respuestaForm">
+                @foreach (RESPUESTA item in ViewBag.RespuestasActual)
+                {
+                    <div class="cada-opcion">
+                        <label class="opcion-label" for="@item.IdRespuesta">
+                            <div class="opcion-contenedor">
+                                <input type="radio" id="@item.IdRespuesta" name="idRespuesta" value="@item.IdRespuesta" required>
+                                <span class="opcion-texto">@item.Contenido</span>
+                            </div>
+                        </label>
+                    </div>
+                }
+                <input type="hidden" name="idPregunta" value="@ViewBag.PreguntaActual.IdPregunta">
+                <input type="hidden" name="Username" value="@ViewBag.username">
+                <input type="hidden" name="PreguntaActual" value="@ViewBag.PreguntaActual">
+
+                <input type="hidden" id="idRespuesta" name="idRespuesta" value="">
+                <input type="submit" class="boton-b" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <div class="contenedor-puntaje">
+        <p>Nombre de Usuario: @ViewBag.username</p>
+        <p>Puntaje: @ViewBag.puntajeActual</p>
+    </div>
+
+    <!-- Mostrar el contador de tiempo -->
+</section>
+
+<script>
+    var timeLeft = 10;
+    var timer;
+
+    function startTimer() {
+        timer = setInterval(function() {
+            document.getElementById("timer").innerHTML = timeLeft;
+            timeLeft--;
+
+            if (timeLeft < 0) {
+                clearInterval(timer);
+                document.getElementById("idRespuesta").value = "null";
+                document.getElementById("respuestaForm").submit();
+            }
+        }, 1000);
+    }
+
+    startTimer();
+</script>
