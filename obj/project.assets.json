@@ -508,11 +508,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\TP_PREGUNTADORT\\TP_PREGUNTADORT.csproj",
+      "projectUniqueName": "C:\\Users\\47572118\\TP_PREGUNTADORT-ARAN-MAZZA\\TP_PREGUNTADORT.csproj",
       "projectName": "TP_PREGUNTADORT",
-      "projectPath": "Z:\\TP_PREGUNTADORT\\TP_PREGUNTADORT.csproj",
+      "projectPath": "C:\\Users\\47572118\\TP_PREGUNTADORT-ARAN-MAZZA\\TP_PREGUNTADORT.csproj",
       "packagesPath": "C:\\Users\\47572118\\.nuget\\packages\\",
-      "outputPath": "Z:\\TP_PREGUNTADORT\\obj\\",
+      "outputPath": "C:\\Users\\47572118\\TP_PREGUNTADORT-ARAN-MAZZA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

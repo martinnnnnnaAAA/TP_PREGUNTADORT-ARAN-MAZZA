@@ -9,57 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TP_PREGUNTADORT
 build_property.RootNamespace = TP_PREGUNTADORT
-build_property.ProjectDir = z:\TP_PREGUNTADORT\
+build_property.ProjectDir = c:\Users\47572118\TP_PREGUNTADORT-ARAN-MAZZA\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = z:\TP_PREGUNTADORT
+build_property.MSBuildProjectDirectory = c:\Users\47572118\TP_PREGUNTADORT-ARAN-MAZZA
 build_property._RazorSourceGeneratorDebug = 
 
-[z:/TP_PREGUNTADORT/Views/Home/ConfigurarJuego.cshtml]
+[c:/Users/47572118/TP_PREGUNTADORT-ARAN-MAZZA/Views/Home/ConfigurarJuego.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb25maWd1cmFySnVlZ28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP_PREGUNTADORT/Views/Home/Fin.cshtml]
+[c:/Users/47572118/TP_PREGUNTADORT-ARAN-MAZZA/Views/Home/Fin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP_PREGUNTADORT/Views/Home/HighScore.cshtml]
+[c:/Users/47572118/TP_PREGUNTADORT-ARAN-MAZZA/Views/Home/HighScore.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIaWdoU2NvcmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP_PREGUNTADORT/Views/Home/Index.cshtml]
+[c:/Users/47572118/TP_PREGUNTADORT-ARAN-MAZZA/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP_PREGUNTADORT/Views/Home/Juego.cshtml]
+[c:/Users/47572118/TP_PREGUNTADORT-ARAN-MAZZA/Views/Home/Juego.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxKdWVnby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP_PREGUNTADORT/Views/Home/Privacy.cshtml]
+[c:/Users/47572118/TP_PREGUNTADORT-ARAN-MAZZA/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP_PREGUNTADORT/Views/Home/Respuesta.cshtml]
+[c:/Users/47572118/TP_PREGUNTADORT-ARAN-MAZZA/Views/Home/Respuesta.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXNwdWVzdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP_PREGUNTADORT/Views/Shared/Error.cshtml]
+[c:/Users/47572118/TP_PREGUNTADORT-ARAN-MAZZA/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP_PREGUNTADORT/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/47572118/TP_PREGUNTADORT-ARAN-MAZZA/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP_PREGUNTADORT/Views/_ViewImports.cshtml]
+[c:/Users/47572118/TP_PREGUNTADORT-ARAN-MAZZA/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP_PREGUNTADORT/Views/_ViewStart.cshtml]
+[c:/Users/47572118/TP_PREGUNTADORT-ARAN-MAZZA/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP_PREGUNTADORT/Views/Shared/_Layout.cshtml]
+[c:/Users/47572118/TP_PREGUNTADORT-ARAN-MAZZA/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ios4ufxbow
